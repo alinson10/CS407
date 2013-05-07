@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/index1.css" />
+	<title> First App</title>
+	<script scr="cordova-2.5.0.js"></script>
+	<script type="text/javascript" src="js/index.js">
+		
+	
+	</script>
+	<script>
+		function onLoad(){
+			document.addEventListener("deviceready", onDeviceReady, true);
+		}
+		
+		function onDeviceReady(){
+			navigator.notification.alert("PhoneGap is working!");
+		}
+	</script>
+	
+	
+</head>
+	
+	<body onload = "onLoad();">
+	
+		
+		
+		
+		<div id="gpa">GPA Calculator</div>
+		<div id="middle">
+		<input type="hidden" value="0" id="theValue" />
+		<input type="hidden" value="0" id="totCred" />
+		
+		
+		<form name="gpadata" method="post">
+		
+			
+			<div id="myDiv"><select name="class0" width= "150" style="width: 250px"><option value="5">Math 221/217/275</option><option value="5">Math 222/276</option><option value="4">Math 222 - spring semester 2013 or later</option></select><select name="grade0" width="150" style="width: 60px"><option value="4">A</option><option value="3.5">AB</option><option value="3">B</option></select><a href=\'#\' onclick=\'removeElement('+divIdName+')\'>[X] </a></div>
+			
+			
+		
+		</form>
+		<div id="botOpt">
+		<p><a href="js/index.js" onclick = "return addElement()">Add a Course</a></p>
+		<div id="choice1">TOTAL CREDITS: -- </div>
+		<div id="choice2">TOTAL GRADE POINTS: -- </div>
+		<div id="choice3">MATH/SCIENCE GPA: -- </div>
+		<p><a href="js/index.js" onclick = "return calculate(gpadata)">Calculate GPA</a></p>
+		</div>
+		
+		
+		</div>
+		
+		
+		<div id="opt"><a id ="bot" href="home.html">Home</a></div>
+		
+	</body>
+	
+</html>
