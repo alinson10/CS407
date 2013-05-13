@@ -1,0 +1,50 @@
+<!--Allows user to select major and grab PDF file of curriculum track, stored in phone-->
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title></title>
+  <script type="text/javascript" charset="utf-8" src="cordova-2.5.0.js"></script>
+  <script type="text/javascript" charset="utf-8" src="fileopener.js"></script>
+  <script type="text/javascript" charset="utf-8" src="jquery-1.9.1.js"></script>
+  <script type="text/javascript" charset="utf-8" src="jquery.mobile-1.3.1.min.js"></script>
+  <script type="text/javascript">
+    	function submitFunc(){
+    		switch ($('#chartSelect').val()) {
+    			case '8':
+    				alert("case 8");
+    				window.plugins.fileOpener.open("file:///storage/sdcard0/Android/data/com.engrapp.application/BME_flow.pdf");
+    				alert("past");
+    				break;
+    		};
+    	}	
+    </script> 
+ </head>
+ <body>
+    <h1>Curriculum Flowchart</h1>
+    <form id="chartForm">
+    <select name="MAJOR_ID" id="chartSelect">
+	<option value="8">Biomedical Engineering</option>
+	<option value="25">Biomedical Engr - BioCore</option>
+	<option value="24">Biomedical Engr - preMed</option>
+	<option value="3">Chemical and Biological Engr</option>
+	<option value="4">Civil and Environmental Engr</option>
+	<option value="7">Civil Engr - Constr Engr &amp; Mgmt</option>
+	<option value="6">Civil Engr - Environmental Engr</option>
+	<option value="26">Computer Engineering</option>
+	<option value="28">Electrical Engineering</option>
+	<option value="34">Engineering Mechanics</option>
+	<option value="35">Engineering Mechanics - Astronautics</option>
+	<option value="32">Engineering Physics</option>
+	<option value="5">Geological Engineering</option>
+	<option value="2">Industrial and Systems Engr</option>
+	<option value="29">Materials Science and Engineering</option>
+	<option value="1">Mechanical Engr</option>
+	<option value="30">Nuclear Engr</option>
+	<option value="31">Nuclear Engr - Radiation Sciences</option></select>
+	<input id = "formSubmit" type="submit" value="Submit" onClick="submitFunc()">
+	</form>
+    
+    <script>
+    </script>
+ </body>
+</html>
