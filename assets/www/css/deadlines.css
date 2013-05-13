@@ -11,6 +11,23 @@ html, body
 	margin: 0;
 }
 
+#test {
+	background-image: url('../img/top.png');
+	background-size:30px 30px;
+	background-repeat: repeat-x;
+	position: fixed;
+	left:0;
+	top:0;
+	
+	height: 30 px;
+	width: 100%;
+	
+    font-size:24px;
+    color: #FFFFFF;
+    text-align:left;
+}
+
+
 #crest
 {
 width: 52.5px;
@@ -18,11 +35,26 @@ height: 79.5px;
 }
 #crestDiv
 {
-	float: left;
+	position: fixed;
+	left:0;
+	top:0;
+	
 }
 #engrHeader
 {
 	text-align: center;
+	color: #FFFFFF;
+	background-image: url('../img/top.png');
+	background-size:30px 80px;
+	background-repeat: repeat-x;
+	position: fixed;
+	left:0;
+	top:0;
+	
+	height: 30 px;
+	width: 100%;
+	
+	
 }
 h1
 {
@@ -33,6 +65,34 @@ h2
 {
 	font-size: 1em;
 }
+
+
+#printme
+{
+	margin-top:80px;
+	margin-bottom:30px;
+}
+
+#opt {
+	background-image: url('../img/top.png');
+	background-size:30px 30px;
+	background-repeat: repeat-x;
+	position: fixed;
+	left:0;
+	bottom:0;
+	
+	
+	
+	height: 30 px;
+	width: 100%;
+	
+    font-size:24px;
+    color: #FFFFFF;
+    text-align:left;
+}
+
+
+
 
 table
 {
