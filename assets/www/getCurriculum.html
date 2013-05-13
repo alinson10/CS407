@@ -11,9 +11,8 @@
     	function submitFunc(){
     		switch ($('#chartSelect').val()) {
     			case '8':
-    				alert("case 8");
-    				window.plugins.fileOpener.open("file:///storage/sdcard0/Android/data/com.engrapp.application/BME_flow.pdf");
-    				alert("past");
+    				$('#image').attr('src', 'img/BME_flow.jpg');
+					alert("past");
     				break;
     		};
     	}	
@@ -43,7 +42,7 @@
 	<option value="31">Nuclear Engr - Radiation Sciences</option></select>
 	<input id = "formSubmit" type="submit" value="Submit" onClick="submitFunc()">
 	</form>
-    
+	<img id="image" src=""></img>
     <script>
     </script>
  </body>
