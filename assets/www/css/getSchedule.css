@@ -1,0 +1,19 @@
+		table
+		{
+            background-color: White;
+            font-size:0.8em;
+        }
+		
+	    th, td
+		{
+		   font-size: 0.7em;
+		   padding: 0em;
+		}
+ 
+        tr:nth-child(odd) {
+           background-color: #fafafa;
+        }
+ 
+        tr:nth-child(even) {
+            background-color: #efefef;
+        }

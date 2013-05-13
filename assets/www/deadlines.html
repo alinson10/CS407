@@ -8,13 +8,21 @@
   <script type="text/javascript" charset="utf-8" src="jquery.mobile-1.3.1.min.js"></script>
   <script>
   $(document).ready(function () {
-	$('head').append('<link rel="stylesheet" href="css/test.css" type="text/css" />');
+	$('head').append('<link rel="stylesheet" href="css/deadlines.css" type="text/css" />');
 	});
   </script>
   </head>
  <body>
-    <h1>Deadlines at a Glance</h1>
-    <div id="printme"></div>
+	<div id="header">
+		<div id="headerTop">
+			<div id="crestDiv"><img id="crest" src="img/crest.png" align="bottom"/></div>
+			<div id="engrHeader">
+				<h1>Engineering General Resources</h1>
+				<h2>Deadlines at a Glance</h2>
+			</div>
+		</div>
+    </div>
+	<div id="printme"></div>
     <script>
     var printme = "printme";
        $('#printme').ready(function(){  		
