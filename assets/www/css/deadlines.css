@@ -2,6 +2,7 @@ html, body
 {
 	width: 100%;
 	margin: 0;
+	background-color:#E8E6D1;
 }
 
 #header
@@ -42,6 +43,11 @@ height: 79.5px;
 	
 	
 }
+
+#topRight{
+	background-color:#E8E6D1;
+
+}
 h1
 {
 	font-size: 1.2em;
@@ -56,12 +62,13 @@ h2
 #printme
 {
 	margin-top:80px;
-	margin-bottom:30px;
+	margin-bottom:20px;
+	background-color:#E8E6D1;
 }
 
 #opt {
 	background-image: url('../img/top.png');
-	background-size:30px 30px;
+	background-size:30px 35px;
 	background-repeat: repeat-x;
 	position: fixed;
 	left:0;
@@ -69,12 +76,14 @@ h2
 	
 	
 	
-	height: 35 px;
+	height:35px;
 	width: 100%;
 	
     font-size:24px;
     color: #FFFFFF;
     text-align:left;
+    
+    
 }
 
 

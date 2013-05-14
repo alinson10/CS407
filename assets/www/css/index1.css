@@ -25,23 +25,46 @@ body {
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
     background-color:#E8E6D1;
-    font-family:"Arial";
 }
 
-#gpa {
+h1
+{
+	font-size: 1.2em;
+}
+
+h2
+{
+	font-size: 1em;
+}
+
+
+#crest
+{
+width: 52.5px;
+height: 79.5px; 
+}
+#crestDiv
+{
+	position: fixed;
+	left:0;
+	top:0;
+	
+}
+
+
+#engrHeader {
 	background-image: url('../img/top.png');
-	background-size:30px 30px;
+	background-size:30px 80px;
 	background-repeat: repeat-x;
 	position: fixed;
 	left:0;
 	top:0;
 	
-	height: 30 px;
+	height: 80px;
 	width: 100%;
 	
-    font-size:24px;
     color: #FFFFFF;
-    text-align:left;
+    text-align:Center;
 }
 
 #middle{
@@ -58,7 +81,7 @@ body {
 
 #opt {
 	background-image: url('../img/top.png');
-	background-size:30px 30px;
+	background-size:30px 35px;
 	background-repeat: repeat-x;
 	position: fixed;
 	left:0;
@@ -66,13 +89,17 @@ body {
 	
 	
 	
-	height: 30 px;
+	height:35px;
 	width: 100%;
 	
     font-size:24px;
     color: #FFFFFF;
     text-align:left;
+    
+    
 }
+
+
 
 table,td,tr
 { 
