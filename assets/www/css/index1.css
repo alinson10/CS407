@@ -110,7 +110,7 @@ margin-right: auto;
 }
 td,tr{
 	width: 50%;
-	height: 50%;
+	height: auto;
 }
 
 
