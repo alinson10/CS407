@@ -1,0 +1,68 @@
+<!--This parses the page for Deadlines at a Glance-->
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title></title>
+  <script type="text/javascript" charset="utf-8" src="cordova-2.5.0.js"></script>
+  <script type="text/javascript" charset="utf-8" src="jquery-1.9.1.js"></script>
+  <script type="text/javascript" charset="utf-8" src="jquery.mobile-1.3.1.min.js"></script>
+  <script>
+  $(document).ready(function () {
+	$('head').append('<link rel="stylesheet" href="css/deadlines.css" type="text/css" />');
+	});
+  function goHome() {
+	window.location = 'home.html';
+  }
+  </script>
+  </head>
+ <body>
+	<div id="header">
+		<div id="headerTop">
+			
+			<div id="engrHeader">
+				<h1>GPA Calculator</h1>
+				<h2>Math & Science</h2>
+			</div>
+			<div id="crestDiv"><img id="crest" src="img/crest.png" align="bottom"/></div>
+		</div>
+    </div>
+    
+    
+	<div id="printme">
+	
+	 <script language="Javascript"> 
+<!--
+var credits = new Array (5,5,4,3,4, 5,5,3,3,3 ,3,4,5,5,5, 4,4,3,3,2, 3,3,5,5,3, 3,3,3,3,4, 4,3,3,3,3, 3,3,3);
+function FillGPA(key) {
+	if (document.gpa.grade[key].selectedIndex > 0) {
+		document.gpa.points[key].value = credits[key] * document.gpa.grade[key].options[document.gpa.grade[key].selectedIndex].value;
+	} else {
+		document.gpa.points[key].value = "";
+	}
+	var totCredits = 0;
+	var totPoints = 0;
+	for (var i=0; i<36; i++) {
+		if (document.gpa.grade[i].selectedIndex > 0) {
+			totCredits += credits[i];
+			totPoints += credits[i] * document.gpa.grade[key].options[document.gpa.grade[i].selectedIndex].value;;
+		}
+	}
+	document.gpa.total_credits.value = totCredits;
+	document.gpa.total_points.value = totPoints;
+	var totGPA = totPoints / totCredits + "";
+	document.gpa.total_gpa.value = totGPA.substring(0,5);
+	opener.document.este.mathsci_gpa.value=totGPA.substring(0,5);
+}
+// -->
+        </script>
+	
+	</div>
+    <script>
+    var printme = "printme";
+       $('#printme').ready(function(){  		
+    		$('#printme').load("http://www.engr.wisc.edu/current/coe-gpa-calculator.html #topRight");
+	    });
+    </script>
+    <div id="opt"><a id ="bot" onClick="goHome()">Home</a></div>
+ </body>
+</html>

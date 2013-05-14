@@ -10,10 +10,29 @@
   $(document).ready(function () {
 	$('head').append('<link rel="stylesheet" href="css/getSchedule.css" type="text/css" />');
 	});
+	
+	function goHome() {
+	window.location = 'home.html';
+  }
   </script>
  </head>
  <body>
-    <h1>Drop-In Advising</h1>
+    
+    
+ 
+    <div id="header">
+		<div id="headerTop">
+			
+			<div id="engrHeader">
+				<h1>Drop-In Advising</h1>
+				<h2>Deadlines at a Glance</h2>
+			</div>
+			<div id="crestDiv"><img id="crest" src="img/crest.png" align="bottom"/></div>
+		</div>
+    </div>
+    
+    
+    <div id="middle">
 	<p>This is a first come, first-served type of appointment and expected to address quick questions. Appointments are 15 minutes or less.</p>
     <div id="tableFrame"></div>
 
@@ -34,5 +53,7 @@
 		<li style="padding: 0px; margin: 0px 0px 0px 20px;">Campus resources and services </li>
 		<li style="padding: 0px; margin: 0px 0px 0px 20px;">Referrals for nonacademic problems </li>
 	<p>To schedule an appointment call 608-262-2473 or stop by the EGR Office in Engineering Hall - 1st floor by the deli.</p>
+	</div>
+	 <div id="opt"><a id ="bot" onClick="goHome()">Home</a></div>
  </body>
 </html>

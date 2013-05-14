@@ -1,3 +1,87 @@
+
+
+html, body
+{
+	width: 100%;
+	margin: 0;
+	background-color:#E8E6D1;
+}
+
+#header
+{
+	background-color: #ef1414;
+	width: 100%;
+	margin: 0;
+}
+
+
+#middle{
+	margin-top:80px;
+	margin-bottom:30px;
+
+}
+
+#crest
+{
+width: 52.5px;
+height: 79.5px; 
+}
+#crestDiv
+{
+	position: fixed;
+	left:0;
+	top:0;
+	
+}
+#engrHeader
+{
+	text-align: center;
+	color: #FFFFFF;
+	background-image: url('../img/top.png');
+	background-size:30px 80px;
+	background-repeat: repeat-x;
+	position: fixed;
+	left:0;
+	top:0;
+	
+	height: 30 px;
+	width: 100%;
+	
+	
+}
+
+#opt {
+	background-image: url('../img/top.png');
+	background-size:30px 35px;
+	background-repeat: repeat-x;
+	position: fixed;
+	left:0;
+	bottom:0;
+	
+	
+	
+	height:35px;
+	width: 100%;
+	
+    font-size:24px;
+    color: #FFFFFF;
+    text-align:left;
+    
+    
+}
+
+h1
+{
+	font-size: 1.2em;
+}
+
+h2
+{
+	font-size: 1em;
+}
+
+
+
 		table
 		{
             background-color: White;
