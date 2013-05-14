@@ -10,16 +10,21 @@
   $(document).ready(function () {
 	$('head').append('<link rel="stylesheet" href="css/deadlines.css" type="text/css" />');
 	});
+	
+	function goHome() {
+	window.location = 'home.html';
+  }
   </script>  
  </head>
  <body>
  	<div id="header">
 		<div id="headerTop">
-			<div id="crestDiv"><img id="crest" src="img/crest.png" align="bottom"/></div>
+			
 			<div id="engrHeader">
 				<h1>Engineering General Resources</h1>
 				<h2>Contact Us</h2>
 			</div>
+			<div id="crestDiv"><img id="crest" src="img/crest.png" align="bottom"/></div>
 		</div>
     </div>
     <div id="topRight"></div>
@@ -28,5 +33,6 @@
     		$('#topRight').load("http://www.engr.wisc.edu/current/egr-current-undergraduate-advisors.html #topRight");
 	    });
     </script>
+    <div id="opt"><a id ="bot" onClick="goHome()">Home</a></div>
  </body>
 </html>
