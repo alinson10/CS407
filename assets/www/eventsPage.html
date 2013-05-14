@@ -6,10 +6,30 @@
   <script type="text/javascript" charset="utf-8" src="cordova-2.5.0.js"></script>
   <script type="text/javascript" charset="utf-8" src="jquery-1.9.1.js"></script>
   <script type="text/javascript" charset="utf-8" src="jquery.mobile-1.3.1.min.js"></script>
+  
+  <script>
+  $(document).ready(function () {
+	$('head').append('<link rel="stylesheet" href="css/deadlines.css" type="text/css" />');
+	});
+	
+	 function goHome() {
+	window.location = 'homeFinal.html';
+  }
+  </script>
  </head>
  <body>
-    <h1>Events page</h1>
-	<h2>EGR Group Advising Event (Fall &amp; Spring)</h2> </body>
+    
+	
+	<div id="headerTop">
+			
+			<div id="engrHeader">
+				<h1>Events page</h1>
+				<h2>EGR Group Advising Event</h2>
+			</div>
+			<div id="crestDiv"><img id="crest" src="img/crest.png" align="bottom"/></div>
+		</div>
+		
+		<div id="printme">
 	<p>&nbsp;</p>
 	<p>As EGR students you will have a registration hold and are
         required to receive advising before registering for your upcoming semester
@@ -49,4 +69,7 @@
         <p>&nbsp;</p>
         <li>See another advisor on campus to learn more about what classes you need for your new major. Afterwards, e-mail your EGR advisor to have the hold removed. Please include your name, ID number, new major (if you have chosen one), list of classes, and the name of the advisor you met with. Do this at least a week before your expected registration time, in case there are complications. Note: You must register for a minimum of 12 credits.</li>
     </ul>
+    </div>
+    <div id="opt"><a id ="bot" onClick="goHome()">Home</a></div>
+    </body>
 </html>
