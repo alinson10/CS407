@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/index1.css" />
+	<title> First App</title>
+	<script scr="cordova-2.5.0.js"></script>
+	<script type="text/javascript" src="js/index.js">
+		
+	
+	</script>
+	<script>
+		function onLoad(){
+			document.addEventListener("deviceready", onDeviceReady, true);
+		}
+		
+		function onDeviceReady(){
+			navigator.notification.alert("PhoneGap is working!");
+		}
+	</script>
+	
+	
+</head>
+	
+	<body onload = "onLoad();">
+	
+		
+		
+		
+		
+		
+		
+		<div id="engrHeader">
+				<h1>GPA Calculator</h1>
+				<h2>Math & Science</h2>
+		</div>
+		<div id="crestDiv"><img id="crest" src="img/crest.png" align="bottom"/></div>
+		<div id="middle">
+		<input type="hidden" value="0" id="theValue" />
+		<input type="hidden" value="0" id="totCred" />
+		
+		
+		<form name="gpadata" method="post">
+		
+			
+			<div id="myDiv">
+			<select name="class0" width= "150" style="width: 250px">
+			<option value="5">Math 221/217/275</option><option value="5">Math 222/276</option>
+			<option value="4">Math 222 - spring semester 2013 or later</option>
+			<option value="4">Math 234</option>
+			<option value="4">Math 234 - taken spring semester 2013 or later</option>
+			<option value="4">Math 375</option>
+			<option value="4">Math 376</option>
+			<option value="4">Math 240</option>
+			<option value="4">Math 319</option>
+			<option value="4">Math 320</option>
+			<option value="4">Math 340</option>
+			<option value="4">Math 320</option>
+			<option value="4">Chemistry 103</option>
+			<option value="4">Chemistry 108</option>
+			<option value="4">Chemistry 109/115</option>
+			<option value="4">Chemistry 104/116</option>
+			<option value="4">Chemistry 311</option>
+			<option value="4">Chemistry 327/329</option>
+			<option value="4">Chemistry 341</option>
+			<option value="4">Chemistry 343</option>
+			<option value="4">Chemistry 344</option>
+			<option value="4">Chemistry 345</option>
+			<option value="4">EMA 201</option>
+			<option value="4">Physics 201/207</option>
+			<option value="4">Physics 202/208</option>
+			<option value="4">Physics 205</option>
+			<option value="4">Physics/ECE 235</option>
+			<option value="4">Physics 241/244</option>
+			<option value="4">Statistics 224</option>
+			<option value="4">Statistics 324</option>
+			<option value="4">Statistics 311</option>
+			<option value="4">Statistics 312</option>
+			<option value="4">Statistics 371</option>
+			<option value="4">Comp Sci 240</option>
+			<option value="4">Comp Sci 302</option>
+			<option value="4">Comp Sci 310</option>
+			<option value="4">NEEP 271</option>
+			<option value="4">Math 320</option>
+			
+			</select>
+			
+			<select name="grade0" width="150" style="width: 60px">
+			<option value="4">A</option>
+			<option value="3.5">AB</option>
+			<option value="3">B</option>
+			<option value="2.5">BC</option>
+			<option value="2">C</option>
+			<option value="1">D</option>
+			<option value="0">F</option>
+			
+			</select>
+			
+			<a href=\'#\' onclick=\'removeElement('+divIdName+')\'>[X] </a>
+			</div>
+			
+			
+		
+		</form>
+		<div id="botOpt">
+		<p><a href="js/index.js" onclick = "return addElement()">Add a Course</a></p>
+		<div id="choice1">TOTAL CREDITS: -- </div>
+		<div id="choice2">TOTAL GRADE POINTS: -- </div>
+		<div id="choice3">MATH/SCIENCE GPA: -- </div>
+		<p><a href="js/index.js" onclick = "return calculate(gpadata)">Calculate GPA</a></p>
+		</div>
+		
+		
+		</div>
+		
+		
+		<div id="opt"><a id ="bot" href="home.html">Home</a></div>
+		
+	</body>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</html>

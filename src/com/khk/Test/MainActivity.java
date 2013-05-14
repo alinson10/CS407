@@ -32,7 +32,7 @@ public class MainActivity extends DroidGap
         super.onCreate(savedInstanceState);
         // Set by <content src="index.html" /> in config.xml
         //super.loadUrl(Config.getStartUrl());
-        super.loadUrl("file:///android_asset/www/home.html");
+        super.loadUrl("file:///android_asset/www/homeFinal.html");
     }
     /*
     public boolean onCreateOptionsMenu(Menu menu){
