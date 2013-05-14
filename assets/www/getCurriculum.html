@@ -7,6 +7,9 @@
   <script type="text/javascript" charset="utf-8" src="fileopener.js"></script>
   <script type="text/javascript" charset="utf-8" src="jquery-1.9.1.js"></script>
   <script type="text/javascript" charset="utf-8" src="jquery.mobile-1.3.1.min.js"></script>
+   $(document).ready(function () {
+	$('head').append('<link rel="stylesheet" href="css/deadlines.css" type="text/css" />');
+	});
   <script type="text/javascript">
 		$(document).ready(function() {
 			$('#selectError').hide();
@@ -89,10 +92,29 @@
 					break;				
 			}
 		}
+		
+		function goHome() {
+			window.location = 'home.html';
+  		}
     </script> 
  </head>
  <body>
-    <h1>Curriculum Flowchart</h1>
+    
+    
+    
+    <div id="header">
+		<div id="headerTop">
+			
+			<div id="engrHeader">
+				<h1>Curriculum Flowchart</h1>
+				<h2> </br></h2>
+			</div>
+			<div id="crestDiv"><img id="crest" src="img/crest.png" align="bottom"/></div>
+		</div>
+    </div>
+    
+    <div id="printme">
+    <h1>Major: </h1>
     <form name="test" id="chartForm"  onSubmit="submitFunc()" >
     <select name="majorSelect" id="chartSelect" data-role="none"  >
 	<option value="0">Select an option</option>
@@ -117,5 +139,7 @@
 	<input id = "formSubmit" label="" type="submit" value="Submit" data-role="none">
 	</form>
 	<span id="selectError" style="text-color: red;">Please select a valid option.</span>
+	<div/>
+	<div id="opt"><a id ="bot" onClick="goHome()">Home</a></div>
  </body>
 </html>
