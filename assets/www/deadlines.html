@@ -10,6 +10,9 @@
   $(document).ready(function () {
 	$('head').append('<link rel="stylesheet" href="css/deadlines.css" type="text/css" />');
 	});
+  function goHome() {
+	window.location = 'home.html';
+  }
   </script>
   </head>
  <body>
@@ -32,7 +35,6 @@
     		$('#printme').load("http://registrar.wisc.edu/spring_deadlines_at_a_glance.htm #printme");
 	    });
     </script>
-    
-    <div id="opt"><a id ="bot" href="home.html">Home</a></div>
+    <div id="opt"><a id ="bot" onClick="goHome()">Home</a></div>
  </body>
 </html>

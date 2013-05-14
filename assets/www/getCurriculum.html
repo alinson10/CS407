@@ -10,39 +10,105 @@
   <script type="text/javascript">
     	function submitFunc(){
     		switch ($('#chartSelect').val()) {
+    			case '1':
+					window.location = 'img/BME_flow.JPG';
+					break;
+
+    			case '2':
+    				window.location = 'img/BMEBio_flow.JPG';
+					break;
+
+    			case '3':
+    				window.location = 'img/BMEPremed_flow.JPG';
+					break;
+
+    			case '4':
+    				window.location = 'img/CE_flow.JPG';
+					break;
+
+    			case '5':
+    				window.location = 'img/CEConst_flow.JPG';
+					break;
+
+    			case '6':
+    				window.location = 'img/CEEnviro_flow.JPG';
+					break;
+
+    			case '7':
+    				window.location = 'img/Chem&Bio_flow.JPG';
+					break;
+
     			case '8':
-    				$('#image').attr('src', 'img/BME_flow.JPG');
-    				break;
-    		};
-    	}	
+    				window.location = 'img/CompE_flow.JPG';
+					break;
+
+    			case '9':
+    				window.location = 'img/EE_flow.JPG';
+					break;
+
+    			case '10':
+    				window.location = 'img/EM_flow.JPG';
+					break;
+
+    			case '11':
+    				window.location = 'img/EMA_flow.JPG';
+					break;
+
+    			case '12':
+    				window.location = 'img/EP_flow.JPG';
+					break;
+
+    			case '13':
+    				window.location = 'img/Geological_flow.JPG';
+					break;
+
+    			case '14':
+    				window.location = 'img/Industrial_flow.JPG';
+					break;
+
+    			case '15':
+    				window.location = 'img/Material_flow.JPG';
+					break;
+
+    			case '16':
+    				window.location = 'img/ME_flow.JPG';
+					break;
+
+    			case '17':
+    				window.location = 'img/Nuclear_flow.JPG';
+					break;
+
+    			case '18':
+    				window.location = 'img/Nuclear-Radiation_flow.JPG';
+					break;				
+			}
+		}
     </script> 
  </head>
  <body>
     <h1>Curriculum Flowchart</h1>
-    <form id="chartForm">
+    <form id="chartForm"  onSubmit="submitFunc()">
     <select name="MAJOR_ID" id="chartSelect">
-	<option value="8">Biomedical Engineering</option>
-	<option value="25">Biomedical Engr - BioCore</option>
-	<option value="24">Biomedical Engr - preMed</option>
-	<option value="3">Chemical and Biological Engr</option>
-	<option value="4">Civil and Environmental Engr</option>
-	<option value="7">Civil Engr - Constr Engr &amp; Mgmt</option>
-	<option value="6">Civil Engr - Environmental Engr</option>
-	<option value="26">Computer Engineering</option>
-	<option value="28">Electrical Engineering</option>
-	<option value="34">Engineering Mechanics</option>
-	<option value="35">Engineering Mechanics - Astronautics</option>
-	<option value="32">Engineering Physics</option>
-	<option value="5">Geological Engineering</option>
-	<option value="2">Industrial and Systems Engr</option>
-	<option value="29">Materials Science and Engineering</option>
-	<option value="1">Mechanical Engr</option>
-	<option value="30">Nuclear Engr</option>
-	<option value="31">Nuclear Engr - Radiation Sciences</option></select>
-	<input id = "formSubmit" type="submit" value="Submit" onClick="submitFunc()">
+	<option value="1">Biomedical Engineering</option>
+	<option value="2">Biomedical Engr - BioCore</option>
+	<option value="3">Biomedical Engr - preMed</option>
+	<option value="4">Chemical and Biological Engr</option>
+	<option value="5">Civil and Environmental Engr</option>
+	<option value="6">Civil Engr - Constr Engr &amp; Mgmt</option>
+	<option value="7">Civil Engr - Environmental Engr</option>
+	<option value="8">Computer Engineering</option>
+	<option value="9">Electrical Engineering</option>
+	<option value="10">Engineering Mechanics</option>
+	<option value="11">Engineering Mechanics - Astronautics</option>
+	<option value="12">Engineering Physics</option>
+	<option value="13">Geological Engineering</option>
+	<option value="14">Industrial and Systems Engr</option>
+	<option value="15">Materials Science and Engineering</option>
+	<option value="16">Mechanical Engr</option>
+	<option value="17">Nuclear Engr</option>
+	<option value="18">Nuclear Engr - Radiation Sciences</option></select>
+	<input id = "formSubmit" type="submit" value="Submit">
 	</form>
 	<img id="image" src=""></img>
-    <script>
-    </script>
  </body>
 </html>
