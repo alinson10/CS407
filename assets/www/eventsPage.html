@@ -9,31 +9,44 @@
  </head>
  <body>
     <h1>Events page</h1>
-    <div id="eventList"></div>
-    <div id="eventCal"></div>
-    <script>
-  	var today = new Date();
-		var currMonth = today.getMonth() + 1;
-		var currYear = today.getFullYear().toString();
-		if(currMonth < 10) { currMonth = "0" + currMonth.toString(); } else { currMonth = currMonth.toString(); }
-	    var calStr = "calendar-" + currYear + "-" + currMonth;
-     	$('#eventCal').ready(function(){  		
-    		$('#eventList').load("http://www.today.wisc.edu/events/tag/engineering #events", function(){
-    				
-    			});
-    		$('#eventCal').load("http://www.today.wisc.edu/events/tag/engineering #" + calStr + "", function(){
-    				$("a").each(function(){
-    					var href = $(this).attr('href');
-    					var linkStr = "www.today.wisc.edu" + href;
-    					$(this).on("click", function(event){
-    						alert("HELLOOOO");
-    						$('#eventList').load(linkStr);
-    					});
-    				});
-    			});
-	    });
-    </script>
-    <script>
-    </script>
- </body>
+	<h2>EGR Group Advising Event (Fall &amp; Spring)</h2> </body>
+	<p>&nbsp;</p>
+	<p>As EGR students you will have a registration hold and are
+        required to receive advising before registering for your upcoming semester
+        courses. To release this hold, please read the instructions below:</p>
+	<p>&nbsp;</p>
+	<p><strong><span style="font-size: 18px;">1st and 2nd year EGR students:</span></strong></p>
+	<p>&nbsp;</p>
+	<p><strong>WHO:</strong> All 1st and 2nd year EGR students are required to attend Fall Group Advising.</p>
+	<p>&nbsp;</p>
+	<ul>
+      <li>1st year EGR Students are required to attend a 1 hour group advising session in order to remove their advising hold.</li>
+      <li>2nd year EGR Students are required to attend the event with the option to meet with an advisor and visit the resource fair.</li>
+    </ul>
+	<p>&nbsp;</p>
+	<p><strong>WHEN:</strong>&nbsp;Coming soon...</p>
+	<p>&nbsp;</p>
+	<p><strong>WHERE:</strong> <strong>Engineering Centers Building</strong></p>
+	<p>Resource Fair Schedule for both <strong>Monday and Tuesday</strong></p>
+	<p>To prepare for the advising session, please bring a copy of your DARS report.</p>
+	<p>&nbsp;</p>
+	<p><strong><span style="font-size: 18px;">3rd Year EGR students (5th semester):</span></strong></p>
+	<p>&nbsp;</p>
+	<p>
+		If you are an EGR student in your 3rd year or 5th semester (summer sessions don’t count), you must see your EGR advisor to clear your advising hold. Call 608-262-2473 to schedule an appointment.
+	</p>
+	<p>&nbsp;</p>
+	<p><strong><span style="font-size: 18px;">EGR students who have officially transferred out of engineering: </span></strong></p>
+	<p>&nbsp;</p>
+	<p>If you have officially transferred out of the College of Engineering, check MyUW to find out if an advising hold has been placed on your registration. If an advising hold is active, e-mail your former EGR advisor or email EGRadvisor@engr.wisc.edu to have the hold removed. Please mention your name, ID number, new major (if you have chosen one), list of classes, and new school or college (for example, Letters &amp; Science).</p>
+	<p>&nbsp;</p>
+	<p><strong><span style="font-size: 18px;">EGR students who are planning on transferring out of engineering: </span></strong></p>
+	<p>&nbsp;</p>
+	<p>If you are thinking of transferring out of engineering, you can either:</p>
+	<ul>
+        <li>Attend a Cross College Advising Service (CCAS) presentation. CCAS will be present at the Group Advising Event on Friday, October 26th from 1pm-2pm and Monday, October 29th from 3pm-4pm.</li>
+        <p>OR</p>
+        <p>&nbsp;</p>
+        <li>See another advisor on campus to learn more about what classes you need for your new major. Afterwards, e-mail your EGR advisor to have the hold removed. Please include your name, ID number, new major (if you have chosen one), list of classes, and the name of the advisor you met with. Do this at least a week before your expected registration time, in case there are complications. Note: You must register for a minimum of 12 credits.</li>
+    </ul>
 </html>
