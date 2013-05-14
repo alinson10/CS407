@@ -8,8 +8,14 @@
   <script type="text/javascript" charset="utf-8" src="jquery-1.9.1.js"></script>
   <script type="text/javascript" charset="utf-8" src="jquery.mobile-1.3.1.min.js"></script>
   <script type="text/javascript">
+		$(document).ready(function() {
+			$('#selectError').hide();
+		});
     	function submitFunc(){
     		switch ($('#chartSelect').val()) {
+				case '0':
+					$('#selectError').show();
+					break;
     			case '1':
 					window.location = 'img/BME_flow.JPG';
 					break;
@@ -87,8 +93,9 @@
  </head>
  <body>
     <h1>Curriculum Flowchart</h1>
-    <form id="chartForm"  onSubmit="submitFunc()">
-    <select name="MAJOR_ID" id="chartSelect">
+    <form name="test" id="chartForm"  onSubmit="submitFunc()" >
+    <select name="majorSelect" id="chartSelect" data-role="none"  >
+	<option value="0">Select an option</option>
 	<option value="1">Biomedical Engineering</option>
 	<option value="2">Biomedical Engr - BioCore</option>
 	<option value="3">Biomedical Engr - preMed</option>
@@ -107,8 +114,8 @@
 	<option value="16">Mechanical Engr</option>
 	<option value="17">Nuclear Engr</option>
 	<option value="18">Nuclear Engr - Radiation Sciences</option></select>
-	<input id = "formSubmit" type="submit" value="Submit">
+	<input id = "formSubmit" label="" type="submit" value="Submit" data-role="none">
 	</form>
-	<img id="image" src=""></img>
+	<span id="selectError" style="text-color: red;">Please select a valid option.</span>
  </body>
 </html>
